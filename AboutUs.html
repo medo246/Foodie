@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="abtstyle.css">
+    <script src="abt.js"></script>
     <title>About Us</title>
 </head>
 <body>
@@ -34,7 +35,7 @@
                 <br><p>Empowering Others: Another crucial reason behind the creation of my food recipe website was my desire to empower others to explore their creativity in the kitchen. By providing detailed recipes, step-by-step instructions, and helpful tips, I wanted to inspire individuals to embark on their own culinary adventures. I firmly believe that cooking is an art form that can boost confidence, enhance well-being, and unleash one's creativity.</p>
                 <br><p>Conclusion: The journey of starting my food recipe website has been an incredible adventure filled with learning, growth, and meaningful connections. What began as a humble desire to share my love for cooking has evolved into a platform where food enthusiasts come together to celebrate the beauty of culinary arts. Through this website, I hope to continue inspiring and empowering others to explore the delightful world of cooking, one recipe at a time.</p>
            
-                <button type="button">let's Talk</button>
+                <button onclick="openChat()" type="button">let's Talk</button>
             </div>
 
         </div>
@@ -62,6 +63,21 @@
           </div>
           
         </section>
+</div>
+<div class="chat-container" id="chatContainer">
+  <div class="chat-header">
+      <h2>Chat with Bot</h2>
+      <button onclick="closeChat()">&times;</button>
+  </div>
+  <div class="chat-log" id="chatLog">
+      <div class="message bot">
+          <p>Welcome! How can I assist you today?</p>
+      </div>
+  </div>
+  <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+  </div>
 </div>
 </body>
 </html>
